@@ -85,3 +85,26 @@
 2020-11-14 13:20:37.458 [http-nio-8003-exec-1] INFO  c.s.user.controller.HelloController - info: hello
 2020-11-14 13:20:37.459 [http-nio-8003-exec-1] WARN  c.s.user.controller.HelloController - info: hello
 2020-11-14 13:20:37.459 [http-nio-8003-exec-1] ERROR c.s.user.controller.HelloController - info: hello
+2020-11-14 13:20:51.605 [main] INFO  com.soft1851.user.Application - The following profiles are active: prod
+2020-11-14 13:20:51.985 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7a3666c4-fea4-3f5e-9d2b-6e233edc3171
+2020-11-14 13:20:52.226 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8103 (http)
+2020-11-14 13:20:52.233 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8103"]
+2020-11-14 13:20:52.233 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-14 13:20:52.233 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-14 13:20:52.322 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-14 13:20:52.322 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 704 ms
+2020-11-14 13:20:52.361 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-14 13:20:52.361 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-14 13:20:52.364 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-14 13:20:52.364 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-14 13:20:52.463 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-14 13:20:53.392 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8103"]
+2020-11-14 13:20:53.410 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8103 (http) with context path ''
+2020-11-14 13:20:54.183 [main] INFO  com.soft1851.user.Application - Started Application in 4.771 seconds (JVM running for 5.739)
+2020-11-14 13:21:10.375 [http-nio-8103-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-14 13:21:10.376 [http-nio-8103-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-14 13:21:10.385 [http-nio-8103-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-11-14 13:21:10.399 [http-nio-8103-exec-1] INFO  c.s.user.controller.HelloController - info: hello
+2020-11-14 13:21:10.400 [http-nio-8103-exec-1] WARN  c.s.user.controller.HelloController - info: hello
+2020-11-14 13:21:10.400 [http-nio-8103-exec-1] ERROR c.s.user.controller.HelloController - info: hello
+2020-11-14 13:35:06.850 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

@@ -347,3 +347,6 @@ java.net.ConnectException: Connection refused: no further information
 2020-11-15 23:56:38.592 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
 2020-11-15 23:56:38.601 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-15 23:56:38.742 [main] INFO  com.soft1851.user.Application - Started Application in 6.657 seconds (JVM running for 7.664)
+2020-11-15 23:56:59.841 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-15 23:56:59.841 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-15 23:56:59.848 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms

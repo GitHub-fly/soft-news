@@ -1,8 +1,6 @@
 package com.soft1851.api;
 
 import com.soft1851.utils.RedisOperator;
-import lombok.RequiredArgsConstructor;
-import org.apache.http.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.BindingResult;

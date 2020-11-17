@@ -1,6 +1,7 @@
 package com.soft1851.user.service;
 
 import com.soft1851.pojo.AppUser;
+import com.soft1851.pojo.bo.UpdateUserInfoBO;
 
 /**
  * @author xunmi
@@ -34,4 +35,11 @@ public interface UserService {
      * @return
      */
     AppUser getUser(String userId);
+
+    /**
+     * 查询最新的用户信息，然后存入 redis
+     *
+     * @param updateUserInfoBO
+     */
+    void updateUserInfo(UpdateUserInfoBO updateUserInfoBO);
 }

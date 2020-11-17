@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Date 2020/11/15
  * @Version 1.0
  **/
-public class PassportInterceptor implements HandlerInterceptor {
+public class PassportInterceptor extends BaseInterceptor implements HandlerInterceptor {
 
     @Autowired
     public RedisOperator redis;

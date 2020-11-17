@@ -23,7 +23,12 @@ public interface UserControllerApi {
     @GetMapping("/all")
     GraceResult getAllUsers();
 
-    @ApiOperation(value = "获得用户基本信息", notes = "获得用户基本信息", httpMethod = "POST")
+    /**
+     * 获得用户基本信息
+     * @param userId
+     * @return
+     */
+    @ApiOperation(value = "获得用户账号信息", notes = "获得用户账号信息", httpMethod = "POST")
     @PostMapping("/userInfo")
     GraceResult getUserInfo(@RequestParam String userId);
 

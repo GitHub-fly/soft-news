@@ -1,5 +1,6 @@
 package com.soft1851.user.service.impl;
 
+import com.soft1851.api.BaseController;
 import com.soft1851.enums.UserStatus;
 import com.soft1851.pojo.AppUser;
 import com.soft1851.user.mapper.AppUserMapper;
@@ -26,7 +27,7 @@ import java.util.Date;
  **/
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-public class UserViceImpl implements UserService {
+public class UserServiceImpl implements UserService {
 
     public final AppUserMapper appUserMapper;
     public final RedisOperator redis;
@@ -66,5 +67,10 @@ public class UserViceImpl implements UserService {
         // 执行插入方法
         appUserMapper.insert(user);
         return user;
+    }
+
+    @Override
+    public AppUser getUser(String userId) {
+        return appUserMapper.selectByPrimaryKey(userId);
     }
 }

@@ -1,9 +1,17 @@
 package com.soft1851.user.controller;
 
+import com.soft1851.api.BaseController;
 import com.soft1851.api.controller.user.UserControllerApi;
 import com.soft1851.pojo.AppUser;
+import com.soft1851.pojo.vo.UserAccountInfoVO;
 import com.soft1851.result.GraceResult;
+import com.soft1851.result.ResponseStatusEnum;
 import com.soft1851.user.mapper.AppUserMapper;
+import com.soft1851.user.service.UserService;
+import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import tk.mybatis.mapper.entity.Example;
 
@@ -18,10 +26,11 @@ import javax.annotation.Resource;
  **/
 
 @RestController
-public class UserController  implements UserControllerApi {
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+public class UserController extends BaseController implements UserControllerApi {
 
-    @Resource
-    private AppUserMapper appUserMapper;
+    private final AppUserMapper appUserMapper;
+    private final UserService userService;
 
     @Override
     public GraceResult getAllUsers() {
@@ -30,10 +39,20 @@ public class UserController  implements UserControllerApi {
 
     @Override
     public GraceResult getUserInfo(String userId) {
-        Example userExample = new Example(AppUser.class);
-        Example.Criteria userCriteria = userExample.createCriteria();
-        userCriteria.andEqualTo("id", userId);
-        AppUser user = appUserMapper.selectOneByExample(userExample);
-        return GraceResult.ok(user);
+        // 0. 判断不能为空
+        if (StringUtils.isBlank(userId)) {
+            return GraceResult.errorCustom(ResponseStatusEnum.UN_LOGIN);
+        }
+        // 1. 根据 userId 查询用户，调用内部封装方法（复用、拓展方便）
+        AppUser user = getUser(userId);
+        // 2. 设置 VO ————需要展示的信息
+        UserAccountInfoVO accountInfoVO = new UserAccountInfoVO();
+        BeanUtils.copyProperties(user, accountInfoVO);
+        return GraceResult.ok(accountInfoVO);
+    }
+
+    private AppUser getUser(String userId) {
+        // TODO 本方法后续待扩展
+        return userService.getUser(userId);
     }
 }

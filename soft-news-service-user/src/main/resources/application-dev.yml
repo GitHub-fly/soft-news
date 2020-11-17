@@ -11,4 +11,4 @@ spring:
 
 # 设置域名，在 java 代码中获取
 website:
-  domain-name:  www.softnews.com
+  domain-name: www.softnews.com

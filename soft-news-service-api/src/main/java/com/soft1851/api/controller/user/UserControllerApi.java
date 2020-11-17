@@ -1,12 +1,13 @@
 package com.soft1851.api.controller.user;
 
+import com.soft1851.pojo.bo.UpdateUserInfoBO;
 import com.soft1851.result.GraceResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 /**
  * @author xunmi
@@ -32,5 +33,8 @@ public interface UserControllerApi {
     @PostMapping("/userInfo")
     GraceResult getUserInfo(@RequestParam String userId);
 
+    @ApiOperation(value = "完善用户信息", notes = "完善用户信息", httpMethod = "POST")
+    @PostMapping("/updateUserInfo")
+    GraceResult updateUserInfo(@RequestBody @Valid UpdateUserInfoBO updateUserInfoBO, BindingResult result);
 
 }

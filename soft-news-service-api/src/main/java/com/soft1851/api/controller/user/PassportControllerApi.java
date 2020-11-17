@@ -1,5 +1,6 @@
 package com.soft1851.api.controller.user;
 
+import com.soft1851.exception.GraceException;
 import com.soft1851.pojo.bo.RegistLoginBO;
 import com.soft1851.result.GraceResult;
 import io.lettuce.core.RedisLoadingException;
@@ -36,6 +37,7 @@ public interface PassportControllerApi {
 
     /**
      * 一键注册登录接口
+     *
      * @param registLoginBO
      * @param result
      * @param request
@@ -48,4 +50,10 @@ public interface PassportControllerApi {
                        BindingResult result,
                        HttpServletRequest request,
                        HttpServletResponse response);
+
+    @ApiOperation(value = "用户退出登录", notes = "用户退出登录", httpMethod = "POST")
+    @PostMapping("/logout")
+    GraceResult logout(HttpServletRequest request,
+                       HttpServletResponse response,
+                       @RequestParam String userId);
 }

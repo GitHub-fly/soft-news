@@ -56,6 +56,6 @@ public class PassportInterceptor extends BaseInterceptor implements HandlerInter
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-
     }
+
 }

@@ -31,6 +31,15 @@ public interface FileUploadControllerApi {
     @PostMapping("/uploadFace")
     GraceResult uploadFace(@RequestParam String userId, MultipartFile file) throws Exception;
 
-
+    /**
+     * 上传多个文件
+     *
+     * @param userId
+     * @param files
+     * @return
+     * @throws Exception
+     */
+    @PostMapping("/uploadSomeFiles")
+    GraceResult uploadSomeFile(@RequestParam String userId, MultipartFile[] files) throws Exception;
 }
 

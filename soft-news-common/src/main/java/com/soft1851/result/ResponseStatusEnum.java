@@ -27,7 +27,7 @@ public enum ResponseStatusEnum {
     FILE_UPLOAD_NULL_ERROR(510, false, "文件不能为空，请选择一个文件再上传！"),
     FILE_UPLOAD_FAILD(511, false, "文件上传失败！"),
     FILE_FORMATTER_FAILD(512, false, "文件图片格式不支持！"),
-    FILE_MAX_SIZE_ERROR(513, false, "仅支持500kb大小以下的图片上传！"),
+    FILE_MAX_SIZE_ERROR(513, false, "仅支持5MB大小以下的图片上传！"),
     FILE_NOT_EXIST_ERROR(514, false, "你所查看的文件不存在！"),
     USER_STATUS_ERROR(515, false, "用户状态参数出错！"),
     USER_NOT_EXIST_ERROR(516, false, "用户不存在！"),

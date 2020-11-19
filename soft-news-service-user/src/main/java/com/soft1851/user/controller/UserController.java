@@ -83,7 +83,6 @@ public class UserController extends BaseController implements UserControllerApi 
     }
 
     private AppUser getUser(String userId) {
-        // TODO 本方法后续待扩展
         // 1. 查询 redis 中是否包含用户信息，如果包含则查询 redis 返回，如果不包含则查询数据库
         String userJson = redis.get(REDIS_USER_INFO + ":" + userId);
         AppUser user;

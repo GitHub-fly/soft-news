@@ -60,7 +60,7 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         // 1. base64 不为空，则代表人脸入库，否则需要用户输入密码和确认密码
         if (StringUtils.isBlank(newAdminBO.getImg64())) {
             if (StringUtils.isBlank(newAdminBO.getPassword()) ||
-                StringUtils.isBlank(newAdminBO.getConfirmPassword())
+                    StringUtils.isBlank(newAdminBO.getConfirmPassword())
             ) {
                 return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_PASSWORD_NULL_ERROR);
             }
@@ -68,7 +68,7 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         // 2. 密码不为空，则必须判断两次输入一致
         if (StringUtils.isNotBlank(newAdminBO.getPassword())) {
             if (!newAdminBO.getPassword()
-            .equalsIgnoreCase(newAdminBO.getConfirmPassword())){
+                    .equalsIgnoreCase(newAdminBO.getConfirmPassword())) {
                 return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_CREATE_ERROR);
             }
         }
@@ -110,4 +110,14 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         setCookie(request, response, "aName", admin.getAdminName(), COOKIE_MONTH);
     }
 
+    @Override
+    public GraceResult adminLogout(String adminId, HttpServletRequest request, HttpServletResponse response) {
+        // 1. 从 redis 中删除 admin 的会话 token
+        redis.del(REDIS_ADMIN_TOKEN + ":" + adminId);
+        // 2. 从 cookie 中清理 admin 登录的相关信息
+        deleteCookie(request, response, "aToken");
+        deleteCookie(request, response, "aId");
+        deleteCookie(request, response, "aName");
+        return GraceResult.ok();
+    }
 }

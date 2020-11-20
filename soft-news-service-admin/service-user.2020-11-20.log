@@ -819,3 +819,14 @@ java.lang.IllegalArgumentException: An invalid domain [${website.domain-name}] w
 2020-11-20 20:35:25.140 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
 2020-11-20 20:35:25.154 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-20 20:35:25.493 [main] INFO  com.soft1851.admin.Application - Started Application in 10.625 seconds (JVM running for 12.708)
+2020-11-20 20:35:31.179 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 20:35:31.180 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-20 20:35:31.191 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-11-20 20:35:43.958 [http-nio-8005-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.admin.service.impl.AdminUserServiceImpl.queryAdminList ===
+2020-11-20 20:35:44.173 [http-nio-8005-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-20 20:35:44.456 [http-nio-8005-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-20 20:35:44.562 [http-nio-8005-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 604
+2020-11-20 20:35:52.831 [http-nio-8005-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.admin.service.impl.AdminUserServiceImpl.queryAdminList ===
+2020-11-20 20:35:52.845 [http-nio-8005-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 13
+2020-11-20 20:42:48.520 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 20:42:49.059 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

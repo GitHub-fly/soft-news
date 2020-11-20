@@ -70,7 +70,7 @@ public interface AdminMsgControllerApi {
      *
      * @param page     当前页码
      * @param pageSize 页数
-     * @return  返回
+     * @return 返回
      */
     @ApiOperation(value = "查询admin列表", notes = "查询admin列表", httpMethod = "POST")
     @PostMapping("/getAdminList")
@@ -79,4 +79,16 @@ public interface AdminMsgControllerApi {
             @RequestParam Integer page,
             @ApiParam(name = "pageSize", value = "分页查询第一页显示的条数")
             @RequestParam Integer pageSize);
+
+    /**
+     * 退出登录
+     *
+     * @param adminId
+     * @param request
+     * @param response
+     * @return
+     */
+    @PostMapping("admin")
+    @ApiOperation(value = "管理员注销", notes = "管理员注销", httpMethod = "POST")
+    GraceResult adminLogout(@RequestParam String adminId, HttpServletRequest request, HttpServletResponse response);
 }

@@ -33,6 +33,7 @@ public class BaseController {
     public static final String MOBILE_SMSCODE = "mobile:smscode";
     public static final String REDIS_USER_TOKEN = "redis_user_token";
     public static final String REDIS_USER_INFO = "redis_user_info";
+    public static final String REDIS_ADMIN_TOKEN = "redis_admin_token";
 
     public static final Integer COOKIE_MONTH = 30 * 24 * 60 * 60;
 
@@ -44,13 +45,14 @@ public class BaseController {
 
     /**
      * 获取BO中的错误信息，可以通过统一的异常处理返回给客户端
+     *
      * @param result
      * @return
      */
     public Map<String, String> getErrors(BindingResult result) {
         Map<String, String> map = new HashMap<>(16);
         List<FieldError> errorList = result.getFieldErrors();
-        for(FieldError error:errorList) {
+        for (FieldError error : errorList) {
             // 发送验证错误的时候所对应的某个属性
             String field = error.getField();
             // 验证的错误消息
@@ -72,6 +74,7 @@ public class BaseController {
             e.printStackTrace();
         }
     }
+
     public void setCookieValue(HttpServletRequest request, HttpServletResponse response, String cookieName, String cookieValue, Integer maxAge) {
         Cookie cookie = new Cookie(cookieName, cookieValue);
         cookie.setMaxAge(maxAge);

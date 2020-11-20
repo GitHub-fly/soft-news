@@ -52,7 +52,9 @@ public class FileUploadController implements FileUploadControllerApi {
                     return GraceResult.errorCustom(ResponseStatusEnum.FILE_FORMATTER_FAILD);
                 }
                 // 执行上传服务，得到回调路径
-                path = uploadService.uploadFdfs(file, suffix);
+//                path = uploadService.uploadFdfs(file, suffix);
+                // 执行 oss 上传
+                path = uploadService.uploadOSS(file, userId, suffix);
             } else {
                 return GraceResult.errorCustom(ResponseStatusEnum.FILE_UPLOAD_NULL_ERROR);
             }
@@ -62,7 +64,7 @@ public class FileUploadController implements FileUploadControllerApi {
         log.info("path = " + path);
         String finalPath;
         if (StringUtils.isNotBlank(path)) {
-            finalPath = fileResource.getHost() + path;
+            finalPath = fileResource.getOssHost() + path;
         } else {
             return GraceResult.errorCustom(ResponseStatusEnum.FILE_UPLOAD_FAILD);
         }

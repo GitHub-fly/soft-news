@@ -5,6 +5,7 @@ import com.soft1851.files.resource.FileResource;
 import com.soft1851.files.service.UploadService;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
+import com.soft1851.utils.extend.AliImageReviewUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -29,6 +30,7 @@ public class FileUploadController implements FileUploadControllerApi {
 
     private final UploadService uploadService;
     private final FileResource fileResource;
+    private final AliImageReviewUtil aliImageReviewUtil;
 
     @Override
     public GraceResult uploadFace(String userId, MultipartFile file) throws Exception {
@@ -64,7 +66,7 @@ public class FileUploadController implements FileUploadControllerApi {
         } else {
             return GraceResult.errorCustom(ResponseStatusEnum.FILE_UPLOAD_FAILD);
         }
-        return GraceResult.ok(finalPath);
+        return GraceResult.ok(doAliImageReview(finalPath));
     }
 
     @Override
@@ -106,5 +108,31 @@ public class FileUploadController implements FileUploadControllerApi {
             }
         }
         return GraceResult.ok(imageUrlList);
+    }
+
+    /**
+     * 检测不通过的默认图片
+     */
+    public static final String FAILED_IMAGE_URL = "https://xunmimi.oss-cn-hangzhou.aliyuncs.com/img/failed.jpg";
+
+    /**
+     * 阿里云图片智能检测
+     *
+     * @param pendingImageUrl
+     * @return
+     */
+    private String doAliImageReview(String pendingImageUrl) {
+        log.info(pendingImageUrl);
+        boolean result = false;
+        try {
+            result = aliImageReviewUtil.reviewImage(pendingImageUrl);
+            System.out.println(result);
+        } catch (Exception e) {
+            System.err.println("图片识别出错");
+        }
+        if (!result) {
+            return FAILED_IMAGE_URL;
+        }
+        return pendingImageUrl;
     }
 }

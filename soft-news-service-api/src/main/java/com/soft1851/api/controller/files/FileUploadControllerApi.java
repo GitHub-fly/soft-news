@@ -3,10 +3,14 @@ package com.soft1851.api.controller.files;
 import com.soft1851.result.GraceResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author xunmi
@@ -54,6 +58,16 @@ public interface FileUploadControllerApi {
     @PostMapping("/uploadToGridFS")
     GraceResult uploadToGridFs(@RequestParam String username, @RequestParam(value = "file") MultipartFile multipartFile) throws Exception;
 
+    /**
+     * @param faceId
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    @ApiOperation(value = "读取faceId", notes = "读取faceId", httpMethod = "GET")
+    @GetMapping("/readInGridFS")
+    GraceResult readInGridFs(String faceId, HttpServletRequest request, HttpServletResponse response) throws Exception;
 
 }
 

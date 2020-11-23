@@ -88,4 +88,11 @@ public class AdminUserServiceImpl implements AdminUserService {
         griResult.setTotal(pageList.getTotal());
         return griResult;
     }
+
+    @Override
+    public void updateAdmin(String username, String faceId) {
+        AdminUser adminUser = queryAdminByUsername(username);
+        adminUser.setFaceId(faceId);
+        adminUserMapper.updateByPrimaryKey(adminUser);
+    }
 }

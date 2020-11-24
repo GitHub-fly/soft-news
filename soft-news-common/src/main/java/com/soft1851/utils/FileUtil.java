@@ -1,6 +1,8 @@
 package com.soft1851.utils;
 
-import sun.misc.BASE64Encoder;
+
+
+import org.apache.commons.codec.binary.Base64;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +16,7 @@ import java.net.URLDecoder;
  **/
 public class FileUtil {
 
-    /**
+    /** 
      * 文件流下载，在浏览器展示
      *
      * @param response 响应
@@ -92,8 +94,7 @@ public class FileUtil {
         }
 
         // 对字节数组Base64编码并且返回
-        BASE64Encoder encoder = new BASE64Encoder();
-        return encoder.encode(fileData);
+        return Base64.encodeBase64String(fileData);
     }
 
 }

@@ -47,7 +47,7 @@ public interface AdminMsgControllerApi {
      * @param username 管理员用户名
      * @return GraceResult
      */
-    @PostMapping("adminIsExist")
+    @PostMapping("/adminIsExist")
     @ApiOperation(value = "查询管理员是否存在", notes = "查询管理人员是否存在", httpMethod = "POST")
     GraceResult adminIsExist(@RequestParam String username);
 
@@ -60,7 +60,7 @@ public interface AdminMsgControllerApi {
      * @param response
      * @return
      */
-    @PostMapping("addNewAdmin")
+    @PostMapping("/addNewAdmin")
     @ApiOperation(value = "添加新的管理人员", notes = "添加新的管理人员", httpMethod = "POST")
     GraceResult addNewAdmin(@RequestBody NewAdminBO newAdminBO, HttpServletRequest request,
                             HttpServletResponse response);
@@ -88,7 +88,7 @@ public interface AdminMsgControllerApi {
      * @param response
      * @return
      */
-    @PostMapping("admin")
+    @PostMapping("/admin")
     @ApiOperation(value = "管理员注销", notes = "管理员注销", httpMethod = "POST")
     GraceResult adminLogout(@RequestParam String adminId, HttpServletRequest request, HttpServletResponse response);
 
@@ -104,5 +104,18 @@ public interface AdminMsgControllerApi {
     @PostMapping("updateAdmin")
     GraceResult updateAdmin(HttpServletRequest request,
                             HttpServletResponse response, @RequestBody NewAdminBO newAdminBO);
+
+    /**
+     * 管理员人脸登录
+     *
+     * @param adminLoginBO
+     * @param request
+     * @param response
+     * @return
+     */
+    @ApiOperation(value = "管理员人脸登录", notes = "管理员人脸登录", httpMethod = "POST")
+    @PostMapping("/adminFaceLogin")
+    GraceResult adminFaceLogin(@RequestBody AdminLoginBO adminLoginBO, HttpServletRequest request,
+                               HttpServletResponse response);
 
 }

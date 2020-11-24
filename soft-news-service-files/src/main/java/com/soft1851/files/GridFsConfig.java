@@ -24,7 +24,7 @@ public class GridFsConfig {
     private String mongodb;
 
     @Bean
-    public GridFSBucket gridFSBucket(MongoClient mongoClient) {
+    public GridFSBucket gridFsBucket(MongoClient mongoClient) {
         MongoDatabase database = mongoClient.getDatabase(mongodb);
         return GridFSBuckets.create(database);
     }

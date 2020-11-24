@@ -54,8 +54,7 @@ public class FaceVerifyUtil {
             mdTemp = MessageDigest.getInstance("MD5");
             mdTemp.update(utfBytes);
             byte[] md5Bytes = mdTemp.digest();
-            Base64Helper b64Encoder = new Base64Helper();
-            encodeStr = b64Encoder.encode(md5Bytes);
+            encodeStr = Base64Helper.encode(md5Bytes);
         } catch (Exception e) {
             throw new Error("Failed to generate MD5 : " + e.getMessage());
         }
@@ -76,7 +75,7 @@ public class FaceVerifyUtil {
             Mac mac = Mac.getInstance("HmacSHA1");
             mac.init(signingKey);
             byte[] rawHmac = mac.doFinal(data.getBytes());
-            result = (new Base64Helper()).encode(rawHmac);
+            result = Base64Helper.encode(rawHmac);
         } catch (Exception e) {
             throw new Error("Failed to generate HMAC : " + e.getMessage());
         }
@@ -84,7 +83,8 @@ public class FaceVerifyUtil {
     }
 
     /**
-     *  等同于javaScript中的 new Date().toUTCString();
+     * 等同于javaScript中的 new Date().toUTCString();
+     *
      * @param date 入参
      * @return String
      */
@@ -201,15 +201,12 @@ public class FaceVerifyUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         Map<String, String> map = JsonUtil.jsonToPojo(response, Map.class);
         Object confidenceStr = map.get("confidence");
         Double responseConfidence = (Double) confidenceStr;
 
         logger.info("人脸对比结果：{}", responseConfidence);
 
-//        System.out.println(response.toString());
-//        System.out.println(map.toString());
 
         if (responseConfidence > targetConfidence) {
             return true;
@@ -259,4 +256,3 @@ public class FaceVerifyUtil {
 //    }
 
 }
-

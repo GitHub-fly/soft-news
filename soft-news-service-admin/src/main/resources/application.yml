@@ -38,7 +38,7 @@ spring:
     time-zone: GMT+8
   data:
     mongodb:
-      uri: mongodb://root:root@121.196.105.198
+      uri: mongodb://root:root@121.196.105.198:27017
       database: soft_news
 ############################################################
 #

@@ -1,5 +1,6 @@
 package com.soft1851.utils.extend;
 
+import lombok.ToString;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -15,10 +16,10 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:aliyun.properties")
 @ConfigurationProperties(prefix = "aliyun")
+@ToString
 public class AliyunResource {
 
     private String accessKeyId;
-
     private String accessKeySecret;
 
     public String getAccessKeyId() {
@@ -36,5 +37,4 @@ public class AliyunResource {
     public void setAccessKeySecret(String accessKeySecret) {
         this.accessKeySecret = accessKeySecret;
     }
-
 }

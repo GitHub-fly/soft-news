@@ -33,4 +33,14 @@ public interface FriendLinkControllerApi {
     @PostMapping("/saveOrUpdateFriendLink")
     GraceResult saveOrUpdateFriendLink(@RequestBody @Valid SaveFriendLinkBO saveFriendLinkBO, BindingResult result);
 
+    /**
+     * 查询友情链接列表
+     *
+     * @return
+     */
+    @ApiOperation(value = "查询友情链接列表", notes = "查询友情链接列表", httpMethod = "POST")
+    @PostMapping("/getFriendLinkList")
+    GraceResult getFriendLinkList();
+
+
 }

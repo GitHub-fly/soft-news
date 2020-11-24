@@ -2083,3 +2083,26 @@ java.lang.Error: Failed to generate HMAC : Empty key
 2020-11-24 16:19:27.281 [http-nio-8005-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
 2020-11-24 16:19:27.606 [http-nio-8005-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1362
 2020-11-24 16:19:29.063 [http-nio-8005-exec-4] INFO  com.soft1851.utils.FaceVerifyUtil - 人脸对比结果：70.63872528076172
+2020-11-24 16:55:43.304 [DateSourceHikariCP housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - DateSourceHikariCP - Thread starvation or clock leap detected (housekeeper delta=5m15s511ms979µs700ns).
+2020-11-24 16:55:47.585 [cluster-ClusterId{value='5fbcc1bfb6380e18cf122e86', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 121.196.105.198:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-24 16:55:57.644 [cluster-ClusterId{value='5fbcc1bfb6380e18cf122e86', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:140}] to 121.196.105.198:27017
+2020-11-24 16:55:57.662 [cluster-ClusterId{value='5fbcc1bfb6380e18cf122e86', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.105.198:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18072600}
+2020-11-24 19:09:37.708 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-24 19:09:38.082 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

@@ -32,4 +32,9 @@ public class FriendLinkServiceImpl implements FriendLinkService {
     public List<FriendLinkMO> queryAllFriendLinkList() {
         return friendLinkRepository.findAll();
     }
+
+    @Override
+    public void delete(String linkId) {
+        friendLinkRepository.deleteById(linkId);
+    }
 }

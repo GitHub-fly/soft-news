@@ -2192,3 +2192,49 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 2020-11-24 19:30:52.839 [http-nio-8005-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList ===
 2020-11-24 19:30:53.075 [http-nio-8005-exec-9] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:148}] to 121.196.105.198:27017
 2020-11-24 19:30:53.174 [http-nio-8005-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 335
+2020-11-24 19:33:46.823 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-24 19:33:47.165 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-24 19:33:47.913 [main] INFO  com.soft1851.admin.AdminApplication - The following profiles are active: dev
+2020-11-24 19:33:48.638 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-24 19:33:48.638 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-24 19:33:48.732 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89ms. Found 1 MongoDB repository interfaces.
+2020-11-24 19:33:48.761 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-24 19:33:48.762 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-24 19:33:48.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-11-24 19:33:48.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2020-11-24 19:33:48.884 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.admin]' package. Please check your configuration.
+2020-11-24 19:33:48.951 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fc455e62-3a05-3d43-8ac2-c84f1e9dc568
+2020-11-24 19:33:49.312 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-24 19:33:49.321 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-24 19:33:49.321 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-24 19:33:49.322 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-24 19:33:49.423 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-24 19:33:49.423 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1495 ms
+2020-11-24 19:33:50.628 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.105.198:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-24 19:33:50.714 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-24 19:33:50.730 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-24 19:33:50.730 [cluster-ClusterId{value='5fbcef9eea15972281243b36', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:149}] to 121.196.105.198:27017
+2020-11-24 19:33:50.758 [cluster-ClusterId{value='5fbcef9eea15972281243b36', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.105.198:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=25598700}
+2020-11-24 19:33:51.195 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-24 19:33:51.196 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-24 19:33:51.213 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-24 19:33:51.214 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-24 19:33:51.329 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 19:33:51.410 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-24 19:33:51.410 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-24 19:33:51.411 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-24 19:33:51.411 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-24 19:33:52.341 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2020-11-24 19:33:52.363 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2020-11-24 19:33:53.025 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-24 19:33:53.036 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-24 19:33:53.044 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-24 19:33:53.179 [main] INFO  com.soft1851.admin.AdminApplication - Started AdminApplication in 7.866 seconds (JVM running for 9.518)
+2020-11-24 19:34:38.411 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-24 19:34:38.411 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-24 19:34:38.420 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-11-24 19:34:38.534 [http-nio-8005-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink ===
+2020-11-24 19:34:38.737 [http-nio-8005-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:150}] to 121.196.105.198:27017
+2020-11-24 19:34:38.767 [http-nio-8005-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 233
+2020-11-24 19:35:22.825 [http-nio-8005-exec-10] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.admin.service.impl.FriendLinkServiceImpl.delete ===
+2020-11-24 19:35:22.860 [http-nio-8005-exec-10] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 34

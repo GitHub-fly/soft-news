@@ -42,6 +42,8 @@ public class BaseController {
     public static final Integer COMMON_START_PAGE = 1;
     public static final Integer COMMON_PAGE_SIZE = 10;
 
+    public static final String REDIS_ALL_CATEGORY = "redis_all_category";
+
 
     @Value("${website.domain-name}")
     public String DOMAIN_NAME;

@@ -1,9 +1,13 @@
 package com.soft1851.enums;
 
 /**
+ * @author xunmi
  * @Desc: 人脸比对类型 枚举
  */
 public enum FaceVerifyType {
+    /**
+     * 人脸比对
+     */
     BASE64(1, "图片Base64对比"),
     IMAGE_URL(0, "URL图片地址对比");
 

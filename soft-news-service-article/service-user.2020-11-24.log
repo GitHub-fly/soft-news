@@ -1,0 +1,40 @@
+2020-11-24 20:06:54.764 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-24 20:06:55.094 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-24 20:06:55.962 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-24 20:06:56.616 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-24 20:06:56.701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-24 20:06:56.702 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-24 20:06:56.728 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 MongoDB repository interfaces.
+2020-11-24 20:06:56.738 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-24 20:06:56.739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-24 20:06:56.748 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-24 20:06:56.923 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-24 20:06:57.015 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=db496a16-784f-3044-8e4a-2dc4b3c30029
+2020-11-24 20:06:57.400 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-24 20:06:57.411 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-24 20:06:57.412 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-24 20:06:57.412 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-24 20:06:57.542 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-24 20:06:57.542 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1563 ms
+2020-11-24 20:06:57.627 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [F:\IDEASpace\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [F:\IDEASpace\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.article.mapper.ArticleMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-11-24 20:06:57.628 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-24 20:06:57.651 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-24 20:06:58.057 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.article.service.impl.ArticleServiceImpl required a bean of type 'com.soft1851.article.mapper.ArticleMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.article.mapper.ArticleMapper' in your configuration.
+
+2020-11-24 20:07:53.032 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-24 20:07:53.289 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

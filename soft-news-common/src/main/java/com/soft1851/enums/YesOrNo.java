@@ -9,7 +9,7 @@ public enum YesOrNo {
      * 是否通过
      */
     NO(0, "否"),
-    Yes(1, "是");
+    YES(1, "是");
 
     public final Integer type;
     public final String value;

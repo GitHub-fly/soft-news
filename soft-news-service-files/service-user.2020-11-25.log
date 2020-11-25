@@ -353,3 +353,7 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 	... 3 common frames omitted
 2020-11-25 14:52:23.517 [cluster-ClusterId{value='5fbdc0ad1996b33ab2987ede', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:96, serverValue:225}] to 121.196.105.198:27017
 2020-11-25 14:52:23.536 [cluster-ClusterId{value='5fbdc0ad1996b33ab2987ede', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.105.198:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16985200}
+2020-11-25 16:34:38.893 [http-nio-8004-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS ===
+2020-11-25 16:34:39.067 [http-nio-8004-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 170
+2020-11-25 16:40:02.197 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS ===
+2020-11-25 16:40:02.305 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 107

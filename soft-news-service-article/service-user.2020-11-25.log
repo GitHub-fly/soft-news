@@ -2210,3 +2210,261 @@ Caused by: org.xml.sax.SAXParseException: 元素内容必须由格式正确的�
 2020-11-25 17:50:50.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 0
 2020-11-25 17:51:02.667 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
 2020-11-25 17:51:03.149 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 17:51:04.076 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 17:51:05.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 17:51:05.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 17:51:05.843 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 MongoDB repository interfaces.
+2020-11-25 17:51:05.853 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 17:51:05.854 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 17:51:05.861 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 17:51:06.017 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 17:51:06.096 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=faea8f97-481d-3152-abfb-c153d8704559
+2020-11-25 17:51:06.594 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 17:51:06.605 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 17:51:06.605 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 17:51:06.605 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 17:51:06.740 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 17:51:06.740 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2633 ms
+2020-11-25 17:51:08.597 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 17:51:08.597 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 17:51:08.601 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 17:51:08.602 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 17:51:08.756 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 17:51:08.878 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-25 17:51:08.878 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-25 17:51:08.879 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-25 17:51:08.879 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-25 17:51:09.048 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.105.198:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 17:51:09.140 [cluster-ClusterId{value='5fbe290daf862a7ae1b07682', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:230}] to 121.196.105.198:27017
+2020-11-25 17:51:09.142 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 17:51:09.161 [cluster-ClusterId{value='5fbe290daf862a7ae1b07682', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.105.198:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15274300}
+2020-11-25 17:51:09.166 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 17:51:09.379 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-25 17:51:10.246 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-25 17:51:10.271 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 17:51:10.986 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 17:51:11.016 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 17:51:11.027 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 17:51:11.177 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 10.084 seconds (JVM running for 11.71)
+2020-11-25 17:51:20.077 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-25 17:51:20.364 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-25 17:51:20.371 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:51:20.417 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 46
+2020-11-25 17:51:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:51:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:51:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:51:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:51:45.265 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 17:51:45.265 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 17:51:45.275 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-11-25 17:51:46.623 [http-nio-8001-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.createArticle ===
+2020-11-25 17:51:47.568 [http-nio-8001-exec-2] INFO  c.s.a.s.impl.ArticleServiceImpl - 审核结果pass
+2020-11-25 17:51:47.568 [http-nio-8001-exec-2] INFO  c.s.a.s.impl.ArticleServiceImpl - 审核通过
+2020-11-25 17:51:47.671 [http-nio-8001-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1047
+2020-11-25 17:51:50.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:51:50.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:52:00.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:52:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:52:10.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:52:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:52:20.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:52:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:52:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:52:30.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:52:40.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:52:40.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:52:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:52:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:53:00.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:53:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:53:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:53:10.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:53:20.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:53:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:53:30.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:53:30.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 4
+2020-11-25 17:53:40.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:53:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:53:50.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:53:50.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:54:00.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:54:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:54:10.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:54:10.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:54:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:54:20.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:54:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:54:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:54:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:54:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 3
+2020-11-25 17:54:50.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:54:50.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:55:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:55:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:55:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:55:10.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:55:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:55:20.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:55:30.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:55:30.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:55:40.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:55:40.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:55:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:55:50.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:56:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:56:00.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:56:04.078 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.createArticle ===
+2020-11-25 17:56:04.235 [http-nio-8001-exec-4] INFO  c.s.a.s.impl.ArticleServiceImpl - 审核结果block
+2020-11-25 17:56:04.236 [http-nio-8001-exec-4] INFO  c.s.a.s.impl.ArticleServiceImpl - 审核不通过
+2020-11-25 17:56:04.288 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 209
+2020-11-25 17:56:10.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:56:10.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:56:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:56:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:56:30.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:56:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:56:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:56:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:56:50.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:56:50.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:57:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:57:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:57:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:57:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:57:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:57:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:57:30.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:57:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:57:40.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:57:40.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:57:50.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:57:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:58:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:58:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:58:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:58:10.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:58:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:58:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:58:30.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:58:30.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:58:40.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:58:40.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:58:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:58:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 0
+2020-11-25 17:59:00.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:59:00.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:59:10.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:59:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:59:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:59:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 17:59:30.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:59:30.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:59:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:59:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 17:59:50.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 17:59:50.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:00:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:00:00.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:00:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:00:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:00:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:00:20.019 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 3
+2020-11-25 18:00:30.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:00:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:00:40.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:00:40.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:00:50.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:00:50.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:01:00.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:01:00.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:01:10.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:01:10.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:01:20.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:01:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:01:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:01:30.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:01:40.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:01:40.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:01:50.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:01:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:02:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:02:00.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 18:02:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:02:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 18:02:20.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:02:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:02:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:02:30.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:02:40.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:02:40.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:02:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:02:50.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:03:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:03:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 3
+2020-11-25 18:03:10.001 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:03:10.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:03:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:03:20.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:03:30.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:03:30.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:03:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:03:40.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1
+2020-11-25 18:05:00.308 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 18:05:00.735 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 18:05:01.610 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 18:05:02.396 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 18:05:02.397 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 18:05:02.418 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 MongoDB repository interfaces.
+2020-11-25 18:05:02.431 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 18:05:02.432 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 18:05:02.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 18:05:02.582 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 18:05:02.652 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=faea8f97-481d-3152-abfb-c153d8704559
+2020-11-25 18:05:03.142 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 18:05:03.154 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 18:05:03.154 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 18:05:03.154 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 18:05:03.282 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 18:05:03.282 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1656 ms
+2020-11-25 18:05:04.965 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 18:05:04.965 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 18:05:04.969 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 18:05:04.969 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 18:05:05.094 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 18:05:05.218 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-25 18:05:05.219 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-25 18:05:05.220 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-25 18:05:05.220 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-25 18:05:05.319 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.105.198:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 18:05:05.409 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 18:05:05.417 [cluster-ClusterId{value='5fbe2c5197474a282b5d6352', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:231}] to 121.196.105.198:27017
+2020-11-25 18:05:05.441 [cluster-ClusterId{value='5fbe2c5197474a282b5d6352', description='null'}-121.196.105.198:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.105.198:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18818600}
+2020-11-25 18:05:05.446 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 18:05:05.658 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-25 18:05:06.475 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-25 18:05:06.505 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 18:05:07.205 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 18:05:07.332 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 18:05:07.341 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 18:05:07.476 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 8.74 seconds (JVM running for 10.555)
+2020-11-25 18:05:10.025 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-25 18:05:10.337 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-25 18:05:10.343 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:05:10.389 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 45
+2020-11-25 18:05:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:05:20.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 18:05:26.937 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 18:05:26.937 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 18:05:26.947 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-11-25 18:05:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:05:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 0
+2020-11-25 18:05:40.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:05:40.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 18:05:41.023 [http-nio-8001-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateArticleStatus ===
+2020-11-25 18:05:41.068 [http-nio-8001-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 45
+2020-11-25 18:05:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:05:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 18:06:00.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:06:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 2
+2020-11-25 18:06:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish ===
+2020-11-25 18:06:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时: 1

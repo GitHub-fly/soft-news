@@ -2,6 +2,8 @@ package com.soft1851.user.controller;
 
 import com.soft1851.api.BaseController;
 import com.soft1851.api.controller.user.FansControllerApi;
+import com.soft1851.enums.Sex;
+import com.soft1851.pojo.vo.FansCountsVO;
 import com.soft1851.result.GraceResult;
 import com.soft1851.user.service.FansService;
 import lombok.RequiredArgsConstructor;
@@ -57,5 +59,28 @@ public class FansController extends BaseController implements FansControllerApi 
         fanServices.unfollow(writerId, fanId);
         return GraceResult.ok();
     }
+    /**
+     *
+     * @param writerId 作者id
+     * @return
+     */
+    @Override
+    public GraceResult queryRatio(String writerId) {
+        int manCounts = fanServices.queryFansCounts(writerId, Sex.Man);
+        int womanCounts = fanServices.queryFansCounts(writerId, Sex.WoMan);
+        FansCountsVO fansCountsVO = new FansCountsVO();
+        fansCountsVO.setManCounts(manCounts);
+        fansCountsVO.setWomanCounts(womanCounts);
+        return GraceResult.ok(fansCountsVO);
+    }
 
+    /**
+     *
+     * @param writerId 作者Id
+     * @return
+     */
+    @Override
+    public GraceResult queryRatioByRegion(String writerId) {
+        return GraceResult.ok(fanServices.queryRatioByRegion(writerId));
+    }
 }

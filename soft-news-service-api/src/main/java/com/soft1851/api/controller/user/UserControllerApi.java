@@ -20,12 +20,18 @@ import javax.validation.Valid;
 @RequestMapping("user")
 public interface UserControllerApi {
 
+    /**
+     * 获得所有用户信息
+     *
+     * @return
+     */
     @ApiOperation(value = "获得所有用户信息", notes = "获得所有用户信息", httpMethod = "GET")
     @GetMapping("/all")
     GraceResult getAllUsers();
 
     /**
      * 获得用户基本信息
+     *
      * @param userId
      * @return
      */
@@ -33,11 +39,34 @@ public interface UserControllerApi {
     @PostMapping("/userBasicInfo")
     GraceResult getUserInfo(@RequestParam String userId);
 
+    /**
+     * 完善用户信息
+     *
+     * @param updateUserInfoBO
+     * @param result
+     * @return
+     */
     @ApiOperation(value = "完善用户信息", notes = "完善用户信息", httpMethod = "POST")
     @PostMapping("/updateUserInfo")
     GraceResult updateUserInfo(@RequestBody @Valid UpdateUserInfoBO updateUserInfoBO, BindingResult result);
 
+    /**
+     * 获得用户基础信息
+     *
+     * @param userId
+     * @return
+     */
     @ApiOperation(value = "获得用户基础信息", notes = "获得用户基础信息", httpMethod = "POST")
     @PostMapping("/getUserInfo")
     GraceResult getUserBasicInfo(@RequestParam String userId);
+
+    /**
+     * 根据用户的ids查询用户列表
+     *
+     * @param userIds
+     * @return
+     */
+    @ApiOperation(value = "根据用户的ids查询用户列表", notes = "根据用户的ids查询用户列表", httpMethod = "GET")
+    @GetMapping("/queryByIds")
+    GraceResult queryByIds(@RequestParam String userIds);
 }

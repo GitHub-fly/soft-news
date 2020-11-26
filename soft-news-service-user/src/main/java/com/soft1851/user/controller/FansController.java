@@ -46,4 +46,16 @@ public class FansController extends BaseController implements FansControllerApi 
         return GraceResult.ok();
     }
 
+    /**
+     *
+     * @param writerId 作者id
+     * @param fanId 粉丝id
+     * @return
+     */
+    @Override
+    public GraceResult unfollow(String writerId, String fanId) {
+        fanServices.unfollow(writerId, fanId);
+        return GraceResult.ok();
+    }
+
 }
